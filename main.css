@@ -1,0 +1,61 @@
+/* ======= GENERAL STYLES ========= */
+* {
+    box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+    background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat center;
+    font-family: 'Mulish', sans-serif; /* dominant font: .tagline, .text span, .column div, .prog-wrap li, .contact p, .answer,
+    .prog-wrap p - italics, 
+    .column h3 - bold, .question-bold */
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #444349;
+}
+
+/* section konténerek és tartalmuk megformázása, középre igazítása*/
+.location,
+.prog,
+.gifts,
+.faq,
+.contact {
+  width: 95%; /* így nem ér hozzá az oldal széléhez */
+  margin: 1.5rem auto; /* a konténerek középre rendezése */
+  padding: .5rem 1rem;
+  text-align: center;
+}
+/* BETŰTÍPUSOK ÉS MÉRETÜK */
+
+/* .text h1, .location h2, .prog h2, .gifts h2, .faq h2, .contact h2  fonts*/
+h1, h2 {
+    font-family: 'Great Vibes', cursive; /* nem szükséges a konténer class-át is feltűntetni előttük */
+
+}
+h2 {
+    font-size: 3rem; /* nem szükséges a konténer class-át is feltűntetni előtte */
+  }
+
+/* h3, .gifts p, .faq h3, .contact p, - font-family: 'Libre Baskerville', serif */
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e;
+}
+  
+a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
+}
