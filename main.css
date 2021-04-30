@@ -72,7 +72,7 @@ a:hover {
 }
 .wrapper {
     display: table-cell;
-  vertical-align: middle;
+    vertical-align: middle;
 }
 .text h1 {
     color: #d2ba87;
@@ -104,7 +104,6 @@ span {
   }
   
 
-
 /* A dátum előtti és utána a vonal */
 span::before,
 span::after {
@@ -114,7 +113,7 @@ span::after {
   height: 1px;
   width: 1.5rem;
   vertical-align: middle;
-  margin: 0 .5rem;
+  margin: 0.5rem;
 }
 
 /* LOCATIONS FORMÁZÁSA */
@@ -141,14 +140,14 @@ span::after {
     text-align: left;
     background: hsla(100,0%,0%,.6);
     color: #d2ba87;
-    font-weight: 550;
+    font-weight: 600;
    
 }
 .prog-wrap {
     width: 95%;
 }
 .prog h2 {
-    font-weight: 550;
+    font-weight: 600;
     text-align: center;
     margin-top: 1rem;
 }
@@ -161,5 +160,14 @@ span::after {
     letter-spacing: .025rem;
   }
 
+  /* GIFTS SZEKCIÓ */
+  .gifts img {
+    height: 7.5rem;
+  }   
+    
+    
+  .gifts p:last-child { 
+    margin-bottom: 0; /* alsó margónak mennie kell, hogy a vertikális ritmus konzisztens maradjon */
+}
 
 
