@@ -13,7 +13,7 @@ img {
 
 body {
     background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png") repeat center;
-    font-family: 'Mulish', sans-serif; /* dominant font: .tagline, .text span, .column div, .prog-wrap li, .contact p, .answer,
+    font-family: 'Mulish', sans-serif; /* dominant font: .column div, .prog-wrap li, .contact p, .answer,
     .prog-wrap p - italics, 
     .column h3 - bold, .question-bold */
     font-size: 1.125rem;
@@ -34,7 +34,7 @@ body {
 }
 /* BETŰTÍPUSOK ÉS MÉRETÜK */
 
-/* .text h1, .location h2, .prog h2, .gifts h2, .faq h2, .contact h2  fonts*/
+/* .text h1, .location h2, .prog h2, .gifts h2, .faq h2, .contact h2 - font-family: 'Great Vibes', cursive*/
 h1, h2 {
     font-family: 'Great Vibes', cursive; /* nem szükséges a konténer class-át is feltűntetni előttük */
 
@@ -43,9 +43,9 @@ h2 {
     font-size: 3rem; /* nem szükséges a konténer class-át is feltűntetni előtte */
   }
 
-/* h3, .gifts p, .faq h3, .contact p, - font-family: 'Libre Baskerville', serif */
+/* .tagline, .text span, h3, .gifts p, .faq h3, .contact p, - font-family: 'Libre Baskerville', serif */
 
-h3 {
+.tagline, .text span, h3, .contact p, .gifts p, .faq h3 {
     font-size: 1.5rem;
     font-family: 'Libre Baskerville', serif;
 }
@@ -58,4 +58,61 @@ a {
 a:hover {
     color: #eda087;
     transition: color .15s ease-in-out;
+}
+
+/* HEADER FORMÁZÁSA */
+
+.cover {
+    background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat 70% center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+.wrapper {
+    display: table-cell;
+  vertical-align: middle;
+}
+.text h1 {
+    color: #d2ba87;
+    font-size: 3.5rem;
+    margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+}
+.tagline, span {
+    color: hsla(0,0%,100%,.9);
+    letter-spacing: 0.2rem;
+}
+.text {
+    background-color: hsla(100,0%,0%,.5);
+    padding: .625rem; /* a szöveg körül egy enyhe padding */
+}
+
+span {
+        font-size: 1.25rem;
+        letter-spacing: .15rem;
+        vertical-align: middle;
+}
+/* A tagline alatti vonal */
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+  }
+  
+
+
+/* A dátum előtti és utána a vonal */
+span::before,
+span::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
 }
