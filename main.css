@@ -41,6 +41,7 @@ h1, h2 {
 }
 h2 {
     font-size: 3rem; /* nem szükséges a konténer class-át is feltűntetni előtte */
+    font-weight: bold;
   }
 
 /* .tagline, .text span, h3, .gifts p, .faq h3, .contact p, - font-family: 'Libre Baskerville', serif */
@@ -98,7 +99,7 @@ span {
     display: block;
     content: "";
     background-color: #fff;
-    height: 1px;
+    height: 0.0625rem;
     width: 12.515625rem;
     margin: .5rem auto;
   }
@@ -110,22 +111,24 @@ span::after {
   display: inline-block;
   content: "";
   background-color: #fff;
-  height: 1px;
+  height: 0.0625rem;
   width: 1.5rem;
   vertical-align: middle;
   margin: 0.5rem;
 }
 
 /* LOCATIONS FORMÁZÁSA */
+
+/* vonal alá */
 .column::after {
         display: block;
         content: "";
         background-color: #444349;
-        height: 3px;
+        height: 0.1875rem;
         width: 7rem;
         margin: 1.5rem auto;
 }
-.location h2, .column h3{
+.location h2, .column h3 {
     font-weight: bold;
 }
 
@@ -170,4 +173,62 @@ span::after {
     margin-bottom: 0; /* alsó margónak mennie kell, hogy a vertikális ritmus konzisztens maradjon */
 }
 
+/* Q and A szekció */
+.faq {
+    background: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    width: 100vw;
+}
+.question {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+.answer {
+    margin-bottom: 1.5rem;
+}
+.question-group::after {
+    display: block;
+    content: "";
+    background-color: #d2ba87;
+    height: 0.1875rem;
+    width: 12.515625rem;
+    margin: 1.5rem auto;
+  }
+.faq h2 {
+    margin-top: 1rem;
+}
+.faq p {
+    text-align: left;
+}
+.faq h3 {
+    font-weight: bold;
+}
 
+/* Contact betűméret változtatás */
+.contact p {
+    font-size: 1.2rem;
+}
+
+/* FOOTER FORMÁZÁSA */
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #606060;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    display: table;
+    
+}
+.footer-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+}
+footer p {
+    margin-bottom: 0; /* így már tényleg középre van igazítva vertikálisan */
+  }
+  
+  footer small {
+    line-height: 1.5;
+  }
