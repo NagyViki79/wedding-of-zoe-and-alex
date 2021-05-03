@@ -206,7 +206,7 @@ span::after {
 
 /* Contact betűméret változtatás */
 .contact p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* FOOTER FORMÁZÁSA */
@@ -231,4 +231,74 @@ footer p {
   
   footer small {
     line-height: 1.5;
+  }
+
+  /* === TABLET SIZE MEDIA QUERY === */
+
+/* Header formázása */
+
+@media (min-width: 768px) {
+    .tagline {
+      text-transform: uppercase;
+    }
+    .text h1 {
+      font-size: 5rem;
+    }
+    .cover {
+      background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat center;
+      background-size: cover;
+    }
+  
+    .text {
+      padding: 1.25rem;
+      border-radius: 4px;
+     /* kivettem, hogy  width: 50%; */
+    }
+  
+  /* "Locations" formázása, 3 oszlopossá alakítás */
+  
+    .column {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    
+    }
+    /* oszlopok közti elválalsztó vonalak eltűntetése */
+    
+    .column::after {
+      display: none;
+    }
+  
+  /* Programs módosítása, középre igazítása a konténernek */
+  
+    .prog-wrapper {
+      width: 50vw;
+      margin: 0 auto;
+    }
+  
+  
+  /* FAQ,  3 oszlopos elrendezés, elválasztó vonalak eltűntetése */
+  
+    .question-group {
+       display: inline-block;
+       width: 30%;
+       vertical-align: top; /* egymáshoz igazítja a "Gyakori kérdések" rész oszlopait */
+       padding: 1.5rem;
+       margin: .5rem;
+    }
+  
+    .question-group::after {
+      display: none;
+    }
+    
+  
+  /* FOOTER formázása */
+  
+    footer {
+      width: 100vw;
+      height: 7vh;
+      font-size: 0.8rem;
+    }
+  
   }
