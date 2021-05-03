@@ -252,7 +252,8 @@ footer p {
     .text {
       padding: 1.25rem;
       border-radius: 4px;
-     /* kivettem, hogy  width: 50%; */
+      margin: 0 auto;
+      width: 50%;
     }
   
   /* "Locations" formázása, 3 oszlopossá alakítás */
